@@ -2,35 +2,16 @@
 <html>
 <body>
 
-<p>Count numbers: <output id="result"></output></p>
-<button onclick="startWorker()">Start Worker</button> 
-<button onclick="stopWorker()">Stop Worker</button>
+<h1>Semantic HTML</h1>
+<p>Semantic HTML means using correct HTML elements for their correct purpose as much as possible.</p>
+<p>If you need a button, use the button element and not a div element:</p>
 
-<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support Web Workers.</p>
+<button>Report an Error</button>
 
-<script>
-var w;
+<div>Report an Error</div>
 
-function startWorker() {
-  if(typeof(Worker) !== "undefined") {
-    if(typeof(w) == "undefined") {
-      w = new Worker("demo_workers.js");
-    }
-    w.onmessage = function(event) {
-      document.getElementById("result").innerHTML = event.data;
-    };
-  } else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Workers...";
-  }
-}
-
-function stopWorker() { 
-  w.terminate();
-  w = undefined;
-}
-</script>
+<p>A button element has more suitable styling than a div, and it is clickable by default.</p>
 
 </body>
 </html>
-
 
