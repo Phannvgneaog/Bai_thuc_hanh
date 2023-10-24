@@ -1,17 +1,26 @@
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>Semantic HTML</h1>
-<p>Semantic HTML means using correct HTML elements for their correct purpose as much as possible.</p>
-<p>If you need a button, use the button element and not a div element:</p>
-
-<button>Report an Error</button>
-
-<div>Report an Error</div>
-
-<p>A button element has more suitable styling than a div, and it is clickable by default.</p>
-
-</body>
-</html>
-
+<head>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    // Change font color to red
+    document.querySelector('#red').addEventListener('click', function() {
+      document.querySelector('#hello').style.color = 'red';
+    });
+    // Change font color to blue
+    document.querySelector('#blue').addEventListener('click', function() {
+      document.querySelector('#hello').style.color = 'blue';
+    });
+    // Change font color to green
+    document.querySelector('#green').addEventListener('click', function() {
+      document.querySelector('#hello').style.color = 'green';
+    });
+    });
+    </script>
+    <title>My Website</title>
+    </head>
+    <body>
+    <h1 id="hello">Hello!</h1>
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <button id="green">Green</button>
+    </body>
+    
