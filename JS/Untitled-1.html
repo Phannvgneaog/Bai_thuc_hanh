@@ -3,13 +3,13 @@
 <head>
 <title> 1st JavaScript</title>
 <script>
-function hello() {
-  alert("Welcome to JS");
+function changeTitle() {
+  document.querySelector('h1').innerHTML = prompt("Nhập nội dung mới cho tiêu đề:");
 }
 </script>
 </head>
 <body>
 <h1>1st JavaScript</h1>
-<button onclick="hello()">Click Here!</button>
+<button onclick="changeTitle()">Change Title</button>
 </body>
 </html>
