@@ -3,13 +3,15 @@
 <head>
 <title> 1st JavaScript</title>
 <script>
-function changeTitle() {
-  document.querySelector('h1').innerHTML = prompt("Nhập nội dung mới cho tiêu đề:");
+function changeColor(button) {
+  button.style.color = prompt("Nhập màu sắc mới cho nút:");
 }
 </script>
 </head>
 <body>
 <h1>1st JavaScript</h1>
-<button onclick="changeTitle()">Change Title</button>
+<button id="red" onclick="changeColor(this)">Red</button>
+<button id="blue" onclick="changeColor(this)">Blue</button>
+<button id="green" onclick="changeColor(this)">Green</button>
 </body>
 </html>
