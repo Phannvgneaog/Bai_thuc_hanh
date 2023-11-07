@@ -1,26 +1,32 @@
+<!DOCTYPE html>
+<html>
 <head>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    // Change font color to red
-    document.querySelector('#red').addEventListener('click', function() {
-      document.querySelector('#hello').style.color = 'red';
-    });
-    // Change font color to blue
-    document.querySelector('#blue').addEventListener('click', function() {
-      document.querySelector('#hello').style.color = 'blue';
-    });
-    // Change font color to green
-    document.querySelector('#green').addEventListener('click', function() {
-      document.querySelector('#hello').style.color = 'green';
-    });
-    });
-    </script>
-    <title>web cua tui</title>
-    </head>
-    <body>
-    <h1 id="hello">Hello!</h1>
-    <button id="red">Red</button>
-    <button id="blue">Blue</button>
-    <button id="green">Green</button>
-    </body>
-    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Click to slide down panel</div>
+<div id="panel">Hello world!</div>
+
+</body>
+</html>
