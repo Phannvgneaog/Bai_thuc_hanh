@@ -1,13 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-  <title>Nhúng PHP vào HTML</title>
+  <meta charset="utf-8">
+  <title></title>
 </head>
 <body>
-
-  <?php
-    // Đoạn code PHP
-    echo "Hello, world!";
-  ?>
-
+  <h3>Hello World!</h3>
+  <select>
+    <option>1</option>
+    <option>2</option>
+  </select>
 </body>
 </html>
