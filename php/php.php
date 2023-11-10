@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <title></title>
-</head>
-<body>
-  <h3>Hello World!</h3>
-  <select>
-    <option>1</option>
-    <option>2</option>
-  </select>
-</body>
-</html>
+<?php
+
+$longAccount = 10000000;
+echo "Số tiền trong tài khoản Long: $longAccount";
+
+$HUMGPay = 10000000;
+echo "HUMG chuyển tiền: $HUMGPay";
+
+$longAccount = $longAccount + $HUMGPay;
+echo "Số tiền trong tài khoản Long: $longAccount";
+
+?>
