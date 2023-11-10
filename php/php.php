@@ -1,12 +1,13 @@
-<?php
+\<?php
 
-$longAccount = 10000000;
-echo "Số tiền trong tài khoản Long: $longAccount";
+$name = "phan xuan tuan";
+$unversityName = "HUMG";
+$firstNumber = 2;
+$secondtNumber = 2;
 
-$HUMGPay = 10000000;
-echo "HUMG chuyển tiền: $HUMGPay";
-
-$longAccount = $longAccount + $HUMGPay;
-echo "Số tiền trong tài khoản Long: $longAccount";
+echo "sinh viên  $name ở phòng 502 tại trường $unversityName <br>";
+echo "sinh viên  $name ở phòng 502 tại trường $unversityName <br>";
+echo "<h1> $unversityName </h1>";
+echo $firstNumber + $secondtNumber;
 
 ?>
