@@ -1,13 +1,15 @@
-\<?php
-
-$name = "phan xuan tuan";
-$unversityName = "HUMG";
-$firstNumber = 2;
-$secondtNumber = 2;
-
-echo "sinh viên  $name ở phòng 502 tại trường $unversityName <br>";
-echo "sinh viên  $name ở phòng 502 tại trường $unversityName <br>";
-echo "<h1> $unversityName </h1>";
-echo $firstNumber + $secondtNumber;
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+Result:
+<?php
+/* php code starts from here */
+$result = $_GET["firstNumber"] + $_GET["secondNumber"]; // calculate the result
+echo $result; // print result to web screen
 ?>
+</body>
+</html>
