@@ -1,6 +1,6 @@
 <?php
-for ($x = 1; $x <= 10; $x++) 
-{
-  print("Day la so $x <br>");
+$x =1;
+while($x<=10){
+  echo "day la so :$x <br>";
 }
 ?>
