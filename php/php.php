@@ -1,6 +1,8 @@
 <?php
-$items = array('11.png.jpg', '22.png.jpg', '33.png.jpg', '44.png.jpg');
-foreach ($items as $item) {
-  echo "<img src='images/$item' width='50px' height='58px' alt='$item'>";
+$exchangeRate = array("USD"=>22380, "EUR"=>27308, "SGD"=>17088, "JPY"=>120);
+if (isset($_GET['amount'])) {
+  $amount = $_GET['amount'];
+  $currency = $_GET['currency'];
+  echo "$amount USD is equal to " . number_format($amount * $exchangeRate[$currency], 0) . " VND";
 }
 ?>
