@@ -1,8 +1,21 @@
+
 <?php
-$exchangeRate = array("USD"=>22380, "EUR"=>27308, "SGD"=>17088, "JPY"=>120);
-if (isset($_GET['amount'])) {
-  $amount = $_GET['amount'];
-  $currency = $_GET['currency'];
-  echo "$amount USD is equal to " . number_format($amount * $exchangeRate[$currency], 0) . " VND";
+
+
+before if statement
+echo "THE GAME ";
+
+if statement; condition: $_GET["response"] == "yes"
+if ($_GET["response"] == "yes") {
+ echo "HAS BEEN QUITED";
 }
+
+// if statement; condition: $_GET["response"] == "no"
+if ($_GET["response"] == "no") {
+ echo "WILL BE CONTINUED IN 3 SECONDS";
+}
+
+// after if statement
+echo "<br>AFTER IF STATEMENT";
 ?>
+
