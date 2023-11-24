@@ -7,6 +7,9 @@ $exchangeRate = array(
   "JPY" => 120
 );
 
+$amount = $_GET["amount"];
+$currency = $_GET["currency"];
+
 echo "<h3>Exchange rate to VND</h3>";
 echo "<table border='1'>
   <tr>
@@ -20,5 +23,7 @@ foreach ($exchangeRate as $currency => $rate) {
   </tr>";
 }
 echo "</table>";
+
+echo "<p>Số tiền $amount $currency là: <b>" . number_format($amount * $exchangeRate[$currency], 0, ',', '.') . " VND</b></p>";
 
 ?>
