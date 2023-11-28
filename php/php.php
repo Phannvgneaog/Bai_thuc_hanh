@@ -1,5 +1,7 @@
 <?php
 
+require('13-function.php');
+
 $items = array('item1.png', 'item2.png', 'item3.png', 'item4.png');
 
 foreach ($items as $item) {
